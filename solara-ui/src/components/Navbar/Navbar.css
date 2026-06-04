@@ -1,0 +1,12 @@
+.solara-nav {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 42px;
+  
+}
+.navbar{
+  padding: 20px 52px;
+}
