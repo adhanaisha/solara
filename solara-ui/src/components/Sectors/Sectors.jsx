@@ -1,3 +1,4 @@
+import "./Sectors.css";
 import { useEffect, useState } from "react";
 import { FaShieldAlt, FaHeartbeat, FaCloud, FaSun } from "react-icons/fa";
 import { Sun } from "lucide-react";
@@ -91,42 +92,44 @@ function Sectors() {
   }, []);
 
   return (
-    <section className="min-h-screen bg-[#161C57] text-white px-20 py-24 pt-36 pb-24 section-container">
+    <section className="sectors-section min-h-screen bg-[#161C57] text-white px-20 py-24 pt-36 pb-24 section-container">
       <h1
         style={{ paddingTop: "50px" }}
-        className="text-[34px] font-semibold mb-24"
+        className="sectors-heading text-[34px] font-semibold mb-24"
       >
         Sectors in Focus
       </h1>
 
-      <div className="flex min-h-screen">
+      <div className="sectors-wrapper flex min-h-screen">
         <div
           style={{ marginTop: "45px" }}
-          className="w-[20%] border-r border-[#3a3785] pr-16"
+          className="sectors-sidebar w-[20%] border-r border-[#3a3785] pr-16"
         >
           {sections.map((item, index) => (
             <div
               key={index}
               style={{ marginBottom: "58px" }}
-              className={`flex items-center gap-8 mb-36 transition-all duration-700 ${
+              className={`sector-tab flex items-center gap-8 mb-36 transition-all duration-700 ${
                 active === index
                   ? "text-orange-500 opacity-100 scale-105"
                   : "text-[#6664a7] opacity-40 scale-100"
               }`}
             >
-              {item.icon}
+              <div className="sector-tab-icon">
+  {item.icon}
+</div>
 
-              <h2 className="text-[25px]  font-light">{item.title}</h2>
+              <h2 className="sector-tab-title text-[25px]  font-light">{item.title}</h2>
             </div>
           ))}
         </div>
 
         <div
           style={{ marginLeft: "70px" }}
-          className="w-[60%] pl-20 overflow-hidden h-[700px] relative"
+          className="sectors-content w-[60%] pl-20 overflow-hidden h-[700px] relative"
         >
           <div
-            className="absolute w-full transition-transform duration-700"
+            className="sectors-slider absolute w-full transition-transform duration-700"
             style={{
               transform: `translateY(-${active * 700}px)`,
             }}
@@ -134,13 +137,13 @@ function Sectors() {
             {sections.map((section, sectionIndex) => (
               <div
                 key={sectionIndex}
-                className="grid grid-cols-2 gap-20 h-[700px] relative"
+                className="sector-slide grid grid-cols-2 gap-20 h-[700px] relative"
                 style={{ columnGap: "150px" }}
               >
-                <div>
+                <div className="sector-left-column">
                   <h3
                     style={{ marginTop: "85px", marginBottom: "22px" }}
-                    className="text-[#9BACD8] text-[24px] font-[500] mb-10 leading-tight"
+                    className="sector-category-title text-[#9BACD8] text-[24px] font-[500] mb-10 leading-tight"
                   >
                     {section.leftTitle}
                   </h3>
@@ -168,29 +171,29 @@ function Sectors() {
                   </div>
                 </div>
 
-                <div>
+                <div className="sector-left-column">
                   <h3
                     style={{ marginTop: "85px", marginBottom: "22px" }}
-                    className="text-[#9BACD8] text-[24px] font-[500] mb-10 leading-tight"
+                    className="sector-category-title text-[#9BACD8] text-[24px] font-[500] mb-10 leading-tight"
                   >
                     {section.rightTitle}
                   </h3>
 
-                  <div className="space-y-0">
+                  <div className="sector-items-list space-y-0">
                     {section.rightItems.map((item, index) => (
                       <div
                         key={index}
-                        className="flex items-center gap-5"
+                        className="sector-item flex items-center gap-5"
                         style={{ marginBottom: "22px" }}
                       >
                         <Sun
                           size={22}
-                          className="text-orange-500  flex-shrink-0"
+                          className="sector-item-icon text-orange-500  flex-shrink-0"
                         />
 
                         <p
                           style={{ margin: 0 }}
-                          className="text-[18px] leading-none whitespace-nowrap"
+                          className="sector-item-text text-[18px] leading-none whitespace-nowrap"
                         >
                           {item}
                         </p>

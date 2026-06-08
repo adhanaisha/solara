@@ -1,0 +1,256 @@
+@media (max-width: 1024px) {
+  .mentors-section {
+    width: 322% !important;
+    height:5900px !important;
+  }
+  .mentors-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 4%;
+    column-gap: 1% ;
+     padding-left: 40px;
+      padding-right: 30px;
+  }
+  .mentor-heading {
+    font-size: 79px;
+    padding-bottom: 40px;
+  }
+  .mentor-card {
+    width: 97% !important;
+   
+  }
+  .mentor-image {
+   
+    height: 8%;
+  }
+  .mentor-name {
+    font-size: 45px;
+  }
+  
+  .mentor-role {
+    font-size: 41px;
+  }
+
+  .mentor-company {
+    font-size: 41px;
+  }
+}
+@media (max-width: 991px) {
+  .mentors-section {
+    width: 322%;
+    height:4400px;
+  }
+  .mentors-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 4%;
+    column-gap: 1% ;
+     padding-left: 40px;
+      padding-right: 30px;
+  }
+  .mentor-heading {
+    font-size: 64px;
+    padding-bottom: 40px;
+  }
+  .mentor-card {
+    width: 97% !important;
+   
+  }
+  .mentor-image {
+   
+    height: 8%;
+  }
+  .mentor-name {
+    font-size: 42px;
+  }
+  
+  .mentor-role {
+    font-size: 38px;
+  }
+
+  .mentor-company {
+    font-size: 38px;
+  }
+}
+@media (min-width: 840px) and (max-width: 860px) {
+  .mentors-section {
+    width: 100% !important;
+    height:3300px !important;
+  }
+   .mentors-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    row-gap:70px;
+    column-gap: 0;
+    /* transform: translateX(-25px) */
+  }
+  
+  .mentor-card {
+    width: 94% !important;
+   
+  }
+  .mentor-image {
+   
+    height: 8%;
+  }
+  .mentor-name {
+    font-size: 35px;
+  }
+  
+  .mentor-role {
+    font-size: 30px;
+  }
+
+  .mentor-company {
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .mentors-section{
+    width: 305% !important;
+    height:4000px !important;
+  }
+    .mentor-card {
+    width: 98% !important;
+    height: 108%;
+  }
+  .mentor-heading {
+    font-size: 60px;
+  }
+  .mentor-image {
+    width: 109% !important;
+    height: 11%;
+  }
+  .mentors-grid {
+    gap: 3.6%;
+    column-gap: 1.1%;
+  }
+  .mentor-card > div:first-child {
+    transform: translateX(21px) translateY(-10px);
+  }
+  .mentor-name {
+    font-size: 45px;
+  }
+  
+  .mentor-role {
+    font-size: 40px;
+  }
+
+  .mentor-company {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mentors-section {
+    width: 400% !important;
+     height:24020px !important;
+  }
+  .mentor-card {
+    width: 90% !important;
+    height: 98%;
+  }
+  .mentors-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.5%;
+    transform: translateX(90px) ;
+  }
+
+  .mentor-heading {
+    font-size: 100px !important;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .mentor-image {
+    width: 103% !important;
+    height: 8%;
+  }
+  .mentor-card > div:first-child {
+    width: 93% !important;
+    transform: translateX(40px) translateY(-25px);
+  }
+
+  .mentor-name {
+    font-size: 75px !important;
+    transform: translateY(-80px) ;
+  }
+
+  .mentor-role {
+    font-size: 60px !important;
+    transform: translateY(-80px) ;
+  }
+
+  .mentor-company {
+    font-size: 60px !important;
+    transform: translateY(-80px) ;
+  }
+}
+
+@media (max-width: 430px) {
+  .mentors-section {
+    width: 410%;
+    height:17250px !important;
+  }
+  .mentor-card {
+    width: 87% !important;
+    height: 100%;
+    
+  }
+  .mentors-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.4%;
+     transform: translateX(80px) ;
+  }
+
+  .mentor-heading {
+    font-size: 90px !important;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .mentor-image {
+    width: 90% !important;
+    height: 6%;
+  }
+  .mentor-card > div:first-child {
+    width: 93% !important;
+    transform: translateX(70px) translateY(-25px);
+  }
+
+  .mentor-name {
+    font-size: 69px !important;
+    transform:  translateY(-78px);
+  }
+
+  .mentor-role {
+    font-size: 56px !important;
+    transform:  translateY(-78px);
+  }
+
+  .mentor-company {
+    font-size: 56px !important;
+    transform:  translateY(-78px);
+  }
+}
+@media (max-width: 390px) {
+  .mentors-section {
+    width: 420%;
+    height:15880px !important;
+  }
+   .mentors-grid {
+    
+     transform: translateX(96px) ;
+  }
+}
+@media (max-width: 344px) {
+  .mentors-section {
+    width: 420%;
+    height:14300px !important;
+  }
+   .mentors-grid {
+    
+     transform: translateX(99px) ;
+  }
+   .mentor-image {
+    transform: translateX(-9px) ;
+    width: 88% !important;
+  }
+}

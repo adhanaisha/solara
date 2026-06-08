@@ -1,3 +1,4 @@
+import "./Benefits.css";
 import {
   DollarSign,
   GraduationCap,
@@ -12,7 +13,7 @@ import {
 function Benefits() {
   const benefits = [
     {
-      icon: <DollarSign size={40} />,
+      icon: <DollarSign size={40} color="white" />,
       title: "Seed Investment",
       desc: "Seed funding, expert mentorship, and strong ecosystem access help founders fast-track transformative deeptech solutions.",
     },
@@ -61,28 +62,28 @@ function Benefits() {
   ];
 
   return (
-    <section className="bg-[#171443] px-20 min-h-[931px] text-white section-container">
-      <h1 className="text-[43px] font-semibold mb-10 translate-y-[33px]" >Program Benefits</h1>
+    <section className="benefits-section bg-[#171443] px-20 min-h-[931px] text-white section-container">
+      <h1 className="benefits-heading text-[43px] font-semibold mb-10 translate-y-[33px]" >Program Benefits</h1>
 
-      <p className="text-[#8f8cc9] text-[23px] leading-[50px] w-[950px] translate-y-[24px]">
+      <p className="benefits-subheading text-[#8f8cc9] text-[23px] leading-[50px] w-[950px] translate-y-[24px]">
         Real, tangible benefits designed to accelerate your DeepTech journey.
       </p>
 
-      <div className="grid grid-cols-4 gap-6 translate-y-[76px] ">
+      <div className="benefits-grid grid grid-cols-4 gap-6 translate-y-[76px] ">
         {benefits.map((item, index) => (
           <div
             key={index}
-            className="bg-[#2a2592] rounded-[32px] w-[260px] px-12 py-8 min-h-[320px] border border-[#403cb0] transition-all duration-500 hover:-translate-y-4 hover:bg-[#332db0] hover:shadow-[0_0_40px_rgba(255,140,0,0.25)] cursor-pointer"
+            className="benefit-card bg-[#2a2592] rounded-[32px] w-[260px] px-12 py-8 min-h-[320px] border border-[#403cb0] transition-all duration-500 hover:-translate-y-4 hover:bg-[#332db0] hover:shadow-[0_0_40px_rgba(255,140,0,0.25)] cursor-pointer"
           >
-            <div className="w-[59px] h-[50px] translate-x-[20px] translate-y-[33px] rounded-full bg-orange-500 flex items-center justify-center mb-12">
+            <div className="benefit-icon w-[59px] h-[50px] translate-x-[20px] translate-y-[33px] rounded-full bg-orange-500 flex items-center justify-center mb-12">
               {item.icon}
             </div>
 
-            <h2 className="text-orange-500 translate-x-[20px] translate-y-[55px] text-[21px] font-semibold leading-tight mb-8">
+            <h2 className="benefit-title text-orange-500 translate-x-[20px] translate-y-[55px] text-[21px] font-semibold leading-tight mb-8">
               {item.title}
             </h2>
 
-            <p className="text-[#e7e7ff] text-[15px] translate-x-[20px] translate-y-[55px] leading-[28px] w-[240px] mx-auto">
+            <p className="benefit-desc text-[#e7e7ff] text-[15px] translate-x-[20px] translate-y-[55px] leading-[28px] w-[240px] mx-auto">
               {item.desc}
             </p>
           </div>
